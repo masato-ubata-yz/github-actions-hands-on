@@ -1,0 +1,10 @@
+name: 演習1
+
+on:
+  workflow_dispatch:
+
+jobs:
+  exercise-1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, GitHub Actions."
