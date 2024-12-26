@@ -40,7 +40,7 @@ jobs:
       - name: upload report
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.working-directory }}
+          path: ${{ env.working-directory }}/build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
