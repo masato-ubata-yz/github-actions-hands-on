@@ -10,14 +10,14 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://github.com/masato-ubata-yz/github-actions-hands-on/',
+  url: 'https://masato-ubata-yz.github.io/github-actions-hands-on/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/github-actions-hands-on/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'masato-ubata-yz', // Usually your GitHub org/user name.
+  // organizationName: 'masato-ubata-yz', // Usually your GitHub org/user name.
   projectName: 'github-actions-hands-on', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -30,6 +30,8 @@ const config: Config = {
     defaultLocale: 'ja',
     locales: ['ja'],
   },
+
+  trailingSlash: false,
 
   // 検索エンジンにインデックスされるようにするか(true:検出されない,false:検出される(default))
   noIndex: true,
