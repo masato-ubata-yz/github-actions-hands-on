@@ -13,6 +13,7 @@ title: 演習：ワークフローを動かす
 ## 回答例
 
 <details>
+
 ```yaml
 name: 演習1
 
@@ -26,4 +27,5 @@ jobs:
       - run: echo "Hello, GitHub Actions."
 
 ```
+
 </details>

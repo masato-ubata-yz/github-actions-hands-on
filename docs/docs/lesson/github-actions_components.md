@@ -1,24 +1,19 @@
 ---
-title: GitHub Actionsの基礎
+title: GitHub Actionsのコンポーネント
 ---
 
-# GitHub Actionsの基礎
+# GitHub Actionsのコンポーネント
 
-2019年11月に正式リリースされたGitHubのCI/CDプラットフォームです。   
-主にCI/CDやGitHubの運用プロセス自動化などに使用します。  
-使用可能な機能は、リポジトリのスコープ（Public/Private）やライセンス形態によって異なります。
+本ページでは、GitHub Actionsのコンポーネントについて学習します。  
+コンポーネント構成とそれぞれの概要を理解することを目標としてください。
 
-## 学習の目的
-
-本ページでは、GitHub Actionsのコンポーネント構成とそれぞれの概要を理解することを目的とします。
-
-## コンポーネント
+## 構成
 
 GitHub Actionsは以下のようなコンポーネントで構成されています。  
 
 ![コンポーネント](@site/static/img/github-actions_components.drawio.png)
 
-### ワークフロー(workflow)
+## ワークフロー(workflow)
 
 GitHub Actionsによるる自動化プロセスのことです。  
 1つ以上のジョブで構成されます。  
@@ -29,16 +24,16 @@ GitHub Actionsによるる自動化プロセスのことです。
 数が多くなってくると`.github/workflows/customer`のようにサブディレクトリを設けてカテゴライズしたくなりますが、これをするとワークフローが呼び出せなくなるので注意が必要です。  
 :::
 
-### イベント
+## イベント
 
 ワークフロー実行をトリガーのことです。  
 PRが作成されたとか、特定のブランチにプッシュされたなどをトリガーとし、ワークフローを実行できます。  
 イベントの一覧は、「[ワークフローをトリガーするイベント](https://docs.github.com/ja/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows)」を参照してください。  
 利用頻度の高めのイベントをピックアップして指定例を例示します。
 
-#### 手動実行、プルリクエスト、プッシュ
+### 手動実行、プルリクエスト、プッシュ
 
-```yaml
+```yaml showLineNumbers
 on:
   # 手動実行
   workflow_dispatch:
@@ -70,12 +65,12 @@ on:
 間違えやすいので注意が必要です。
 :::
 
-#### スケジュール
+### スケジュール
 
 定期的に実行したいワークフローに対してスケジュール指定できます。  
 スケジュールは[POSIX cron 構文](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07)で指定します。
 
-```yaml
+```yaml showLineNumbers
 on:
   schedule:
     - cron: "15 4,5 * * *"
@@ -92,27 +87,27 @@ L minute(0-59)
 ```
 :::
 
-#### ワークフローからの呼び出し
+### ワークフローからの呼び出し
 
 再利用可能ワークフロー(Reusable workflow)は、ワークフローから呼び出されることを前提とします。  
 再利用可能ワークフローのイベントは下記のように定義します。
 
-```yaml
+```yaml showLineNumbers
 on: workflow_call
 ```
 
-### ジョブ(Job)
+## ジョブ(Job)
 
 同一のランナー上で実行されるステップ群のことです。  
 1つ以上のステップで構成されるます。
 
-### ステップ(Step)
+## ステップ(Step)
 
 アクションやスクリプトなど、実際に実行する処理のことです。  
 ステップは定義されている順に実行されます。  
 同一ジョブ内のステップは、同じランナーで実行されるため、ステップ間のデータを共有できます。  
 
-```yaml
+```yaml showLineNumbers
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -135,11 +130,11 @@ jobs:
       - run: tree # ジョブが分かれるとランナーが異なるため、どこかにストアしない限りbuildジョブのデータは共有できません
 ```
 
-### アクション(Action)
+## アクション(Action)
 
 アクションは再利用可能なスクリプトで[アクションマーケットプレイス](https://github.com/marketplace)から取得できます。
 
-### ランナー(Runner)
+## ランナー(Runner)
 
 ジョブを実行するサーバーのことです。  
 GitHubでは、Ubuntu Linux、Microsoft Windows、macOSをランナーとして提供しています。  
