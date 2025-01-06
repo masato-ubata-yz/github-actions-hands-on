@@ -1,0 +1,23 @@
+name: 演習2
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo 'step1'
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: step2
+        run: echo 'step2'
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step3
+        run: echo 'step3'
+                    
