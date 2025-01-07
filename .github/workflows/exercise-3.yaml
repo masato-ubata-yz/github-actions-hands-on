@@ -1,0 +1,11 @@
+name: 演習3
+
+on:
+  push:
+    branches: main
+  
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'exercise-3'
