@@ -1,0 +1,11 @@
+name: 演習4
+
+on:
+  schedule:
+    - cron: '20 10 7 1 *'
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'exercise-4'
