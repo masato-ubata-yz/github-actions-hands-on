@@ -48,10 +48,12 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '使用方法',
+      label: '使用方法など',
       items: [
         'how-to-use/dev-env',
         'how-to-use/manually-run-the-workflow',
+        'how-to-use/show-workflow-log',
+        'how-to-use/create-workflow-badge',
       ]
     }
   ],
