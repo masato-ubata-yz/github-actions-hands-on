@@ -3,7 +3,8 @@ name: 演習4
 on:
   workflow_dispatch: 
   schedule:
-    - cron: '*/5 * * * *'
+    # - cron: '*/5 * * * *' # 5分間隔で定期実行
+    - cron: '0 0 1 1 *'
 
 jobs:
   job1:

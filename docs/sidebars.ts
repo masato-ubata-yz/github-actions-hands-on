@@ -19,7 +19,7 @@ const sidebars: SidebarsConfig = {
   // ],
 
   // But you can create a sidebar manually
-  tutorialSidebar: [
+  githubActionsHandsOnSidebar: [
     // 'intro',
     // 'hello',
     // {
@@ -29,9 +29,9 @@ const sidebars: SidebarsConfig = {
     'lesson/introduction',
     {
       type: 'category',
-      label: '基礎',
+      label: '基礎構造を理解する',
       items: [
-        'lesson/github-actions_components',
+        'lesson/components',
         'lesson/workflow_elements',
         'exercises/exercise-1',
         'exercises/exercise-2',
@@ -39,8 +39,18 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'イベントを試す',
+      items: [
+        'lesson/events',
+        'exercises/exercise-3',
+        'exercises/exercise-4',
+      ]
+    },
+    {
+      type: 'category',
       label: '使用方法',
       items: [
+        'how-to-use/dev-env',
         'how-to-use/manually-run-the-workflow',
       ]
     }

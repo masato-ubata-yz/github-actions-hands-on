@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'GitHub Actionsハンズオン',
-  tagline: 'GitHub Actions初学者がワークフローを構築を学習するガイドライン',
+  tagline: 'GitHub Actions初学者向けハンズオンガイドライン',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -79,14 +79,14 @@ const config: Config = {
     // image: 'img/docusaurus-social-card.jpg',
     navbar: {
       // title: 'GitHub Actionsハンズオン',
-      // logo: {
-      //   alt: 'My Site Logo',
-      //   src: 'img/logo.svg',
-      // },
+      logo: {
+        // alt: 'My Site Logo',
+        src: 'img/lesson.png',
+      },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'githubActionsHandsOnSidebar',
           position: 'left',
           label: 'GitHub Actionsハンズオン',
         },
