@@ -3,6 +3,8 @@ name: 演習4
 on:
   schedule:
     - cron: '5 2 7 1 *'
+    - cron: '15 2 * * *'
+    - cron: '20 2 * * *'
 
 jobs:
   job1:
