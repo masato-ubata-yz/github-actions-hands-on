@@ -1,5 +1,7 @@
 ---
 title: イベント
+authors: [masato-ubata]
+tags: [github-actions]
 ---
 
 # イベント

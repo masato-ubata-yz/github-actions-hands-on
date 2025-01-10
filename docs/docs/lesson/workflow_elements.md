@@ -1,5 +1,7 @@
 ---
 title: ワークフロー構文の要素
+authors: [masato-ubata]
+tags: [github-actions]
 ---
 
 # ワークフロー構文の要素

@@ -1,5 +1,7 @@
 ---
 title: 演習：ワークフローを動かす
+authors: [masato-ubata]
+tags: [github-actions]
 ---
 
 # 演習問題

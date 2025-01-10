@@ -1,8 +1,12 @@
 ---
 title: ワークフローの手動実行
+authors: [masato-ubata]
+tags: [github-actions]
 ---
 
 # ワークフローの手動実行
+
+ワークフローを手動で実行する手順は以下の通りです。
 
 ## 手順
 

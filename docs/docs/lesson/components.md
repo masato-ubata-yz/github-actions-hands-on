@@ -1,5 +1,7 @@
 ---
 title: GitHub Actionsのコンポーネント
+authors: [masato-ubata]
+tags: [github-actions]
 ---
 
 # GitHub Actionsのコンポーネント

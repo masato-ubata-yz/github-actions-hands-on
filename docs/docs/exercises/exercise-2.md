@@ -1,5 +1,7 @@
 ---
 title: 演習：ジョブの依存関係を定義する
+authors: [masato-ubata]
+tags: [github-actions]
 ---
 
 # 演習問題

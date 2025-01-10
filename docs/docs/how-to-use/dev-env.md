@@ -1,5 +1,7 @@
 ---
 title: 開発環境
+authors: [masato-ubata]
+tags: [github-actions]
 ---
 
 # 開発環境

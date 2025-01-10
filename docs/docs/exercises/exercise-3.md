@@ -1,5 +1,7 @@
 ---
 title: 演習：イベントを設定してみる
+authors: [masato-ubata]
+tags: [github-actions]
 ---
 
 # 演習問題
